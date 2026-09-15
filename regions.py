@@ -116,7 +116,7 @@ def connect_regions(world: POPWWWorld) -> None:
     Conditions_List = ["Serpent_Sword", "Serpent_Sword","Eye_of_the_Storm","Eye_of_the_Storm", "Shahdee_beaten"]
     
     
-    #Besoin d'un shortcut je crois
+    #I think there's a shortcut, not sure
     (Garden_Waterworks_Past,Garden_Hall_Past)
     ("Garden Tower Waterworks (Past) to Garden Hall (Past)","Garden Hall (Past) to Garden Waterworks (Past)")
     
@@ -125,7 +125,7 @@ def connect_regions(world: POPWWWorld) -> None:
     (Southern_Passage_Past, Sacrificial_Altar)
     ("Southern Passage (Past) to Sacrificial Altar")
     
-   #I want to check some region connectivity for these ones
+   #I want to check some region connectivity for these ones, the code isn't pretty
     Hourglass_Room.connect(Throne_Room, "Hourglass Room to Throne Room", lambda state: state.has(not("Beat Kaileena"),world.player))
     Throne_Room.connect(Sacred_Caves_Present, "Throne Room to the Sacred Caves", lambda state: state.has("Beat Kaileena" and "Scorpion Sword", world.player))
     Sacred_Caves_Present.connect(Sacred_Caves_Past, "Time Portal in the Sacred Caves")
@@ -134,6 +134,8 @@ def connect_regions(world: POPWWWorld) -> None:
     Catacombs.connect(Prison_Present, "Catacombs to the Prison")
     Prison_Present.connect(Prison_Past, "Time Portal in the Prison")
     Prison_Past.connect(Library_Past ,"Prison to the Library ", lambda state: state.has("Scorpion Sword"), world.player)
-    Library_Past.connect(Mechanical_Pit_Past, "Library to the Mechanical Pit", lambda state: state.has("Beat Kaileena"), world.player)    
+    Library_Past.connect(Mechanical_Pit_Past, "Library to the Mechanical Pit", lambda state: state.has("Beat Kaileena"), world.player) 
+
+    It's still missing a few ones
     
     
