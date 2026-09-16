@@ -27,61 +27,61 @@ location_table: dict[str,LocationData] = {
     "Water Sword": LocationData("Hourglass Room",id = 7, rule = lambda state, player: state.has("Health Upgrade",player,9)),
     #Secondary Weapons
     #Axes
-    "Airyaman - Axe": LocationData("Beach",id = 8),
-    "Allatum - Axe":  LocationData("",id = 9),
-    "Natat - Axe":  LocationData("",id = 10),
-    "Apaosa - Axe":  LocationData("",id = 11),
-    "Vahishta - Axe":  LocationData("",id = 12),
-    "Vidatu - Axe":  LocationData("",id = 13),
-    "Ahura (Fork)- Axe":  LocationData("",id = 14),
-    "Drvaspa - Axe":  LocationData("",id = 15),
-    "Apam - Axe":  LocationData("",id = 16),
-    "Ereta - Axe":  LocationData("",id = 17),
-    "Mainyu - Axe":  LocationData("",id = 18),
-    "Ahura (Scythe) - Axe":  LocationData("",id = 19),
-    "Bahram - Axe":  LocationData("",id = 20),
-    "Spentas - Axe":  LocationData("",id = 21),
+    "Airyaman - Axe": LocationData("Beach",id = 8), #A1
+    "Allatum - Axe":  LocationData("Southern Passage (Past)",id = 9),#A2
+    "Natat - Axe":  LocationData("Garden Hall (Past)",id = 10),#A3
+    "Apaosa - Axe":  LocationData("Mechanical Pit (Past)",id = 11),#A4
+    "Vahishta - Axe":  LocationData("Library (Past)",id = 12),#A5
+    "Vidatu - Axe":  LocationData("Prison (Past)",id = 13),#A6
+    "Ahura (Fork)- Axe":  LocationData("Southern Passage (Past)",id = 14),#A7
+    "Drvaspa - Axe":  LocationData("Garden Activation Room (Present)",id = 15),#A8
+    "Apam - Axe":  LocationData("Garden Hall (Present)",id = 16),#A9
+    "Ereta - Axe":  LocationData("Southern Passage (Past)",id = 17),#A10
+    "Mainyu - Axe":  LocationData("Fortress Entrance (Present)",id = 18),#A11
+    "Ahura (Scythe) - Axe":  LocationData("Fortress Entrance (Present)",id = 19),#A12
+    "Bahram - Axe":  LocationData("Mechanical Tower Entrance",id = 20),#A13
+    "Spentas - Axe":  LocationData("Prison (Past)",id = 21),#A14
     #Swords
-    "Buyasta - Sword":  LocationData("Beach",id = 22),
-    "Zarich - Sword":  LocationData("",id = 23),
-    "Haoma - Sword":  LocationData("",id = 24),
-    "Spenta - Sword":  LocationData("",id = 25),
-    "Yasht - Sword":  LocationData("",id = 26),
-    "Vanant - Sword":  LocationData("",id = 27),
-    "Kerena - Sword":  LocationData("",id = 28),
-    "Camros - Sword":  LocationData("",id = 29),
-    "Fravashis - Sword":  LocationData("",id = 30),
-    "Tasan - Sword":  LocationData("",id = 31),
-    "Asto - Sword":  LocationData("",id = 32),
-    "Agas - Sword":  LocationData("",id = 33),
-    "Srosh - Sword":  LocationData("",id = 34),
-    "Rustam - Sword":  LocationData("",id = 35),
-    "Mainyu - Sword":  LocationData("",id = 36),
-    "Mahre - Sword":  LocationData("",id = 37),
-    "Dena - Sword":  LocationData("",id = 38),
-    "Asman - Sword":  LocationData("",id = 39),
+    "Buyasta - Sword":  LocationData("Beach",id = 22),#S1
+    "Zarich - Sword":  LocationData("Fortress Entrance (Past)",id = 23),#S2
+    "Haoma - Sword":  LocationData("Mechanical Pit (Past)",id = 24),#S3
+    "Spenta - Sword":  LocationData("Garden Hall (Past)",id = 25),#S4
+    "Yasht - Sword":  LocationData("Prison (Past)",id = 26),#S5
+    "Vanant - Sword":  LocationData("Cliff",id = 27),#S6
+    "Kerena - Sword":  LocationData("Fortress Entrance (Present)",id = 28),#S7
+    "Camros - Sword":  LocationData("Garden Activation Room (Present)",id = 29),#S8
+    "Fravashis - Sword":  LocationData("Garden Hall (Past)",id = 30),#S9
+    "Tasan - Sword":  LocationData("Library (Past)",id = 31),#S10
+    "Asto - Sword":  LocationData("Prison (Past)",id = 32),#S11
+    "Agas - Sword":  LocationData("Cliff",id = 33),#S12
+    "Srosh - Sword":  LocationData("Throne Room",id = 34),#S13
+    "Rustam - Sword":  LocationData("Fortress Entrance (Past)",id = 35),#S14
+    "Mainyu - Sword":  LocationData("Sacrificial Altar",id = 36),#S15
+    "Mahre - Sword":  LocationData("Activation Room (Present)",id = 37),#S16
+    "Dena - Sword":  LocationData("Fortress Entrance (Past)",id = 38),#S17
+    "Asman - Sword":  LocationData("Mechanical Pit (Past)",id = 39),#S18
     #Maces
-    "Peris - Mace":  LocationData("Beach",id = 40),
-    "Zend - Mace":  LocationData("",id = 41),
-    "Vata - Mace":  LocationData("",id = 42),
-    "Sraosa - Mace":  LocationData("",id = 43),
-    "Menog - Mace":  LocationData("",id = 44),
-    "Baga - Mace":  LocationData("",id = 45),
-    "Yima - Mace":  LocationData("",id = 46),
-    "Izha - Mace":  LocationData("",id = 47),
+    "Peris - Mace":  LocationData("Beach",id = 40),#M1
+    "Zend - Mace":  LocationData("Southern Passage (Present)",id = 41),#M2
+    "Vata - Mace":  LocationData("Mechanical Pit (Past)",id = 42),#M3
+    "Sraosa - Mace":  LocationData("Garden Hall (Present)",id = 43),#M4
+    "Menog - Mace":  LocationData("Foundry",id = 44),#M5
+    "Baga - Mace":  LocationData("Mechanical Pit (Present)",id = 45),#M6
+    "Yima - Mace":  LocationData("Mechanical Pit (Past)",id = 46),#M7
+    "Izha - Mace":  LocationData("Prison (Past)",id = 47),#M8
     #Daggers
-    "Khara - Dagger":  LocationData("",id = 48),
-    "Indra - Dagger":  LocationData("",id = 49),
-    "Abathur - Dagger":  LocationData("",id = 50),
-    "Armaiti - Dagger":  LocationData("",id = 51),
-    "Yazata - Dagger":  LocationData("",id = 52),
-    "Vanishta - Dagger":  LocationData("",id = 53),
+    "Khara - Dagger":  LocationData("Fortress Entrance (Past)",id = 48),#D1
+    "Indra - Dagger":  LocationData("Mechanical Pit (Past)",id = 49),#D2
+    "Abathur - Dagger":  LocationData("Sacred Caves",id = 50),#D3
+    "Armaiti - Dagger":  LocationData("Southern Passage (Past)",id = 51),#D4
+    "Yazata - Dagger":  LocationData("Sacrificial Altar",id = 52),#D5
+    "Vanishta - Dagger":  LocationData("Garden Hall (Present)",id = 53),#D6
     #Secret Weapons
-    "Teddy Bear":  LocationData("",id = 54),
-    "Glove":  LocationData("",id = 55),
-    "Pink Flamingo":  LocationData("",id = 56),
-    "Hockey Stick":  LocationData("",id = 57),
-    "Light Sword":  LocationData("",id = 58),
+    "Teddy Bear":  LocationData("Mechanical Pit (Present)",id = 54),
+    "Glove":  LocationData("Catacombs",id = 55),
+    "Pink Flamingo":  LocationData("Garden Hall (Past)",id = 56, rule lambda.state, player: state.has("Scorpion Sword",player)),
+    "Hockey Stick":  LocationData("Main Hall",id = 57),
+    "Light Sword":  LocationData("Mystic Caves",id = 58, rule lambda.state, player: state.has("Scorpion Sword", player)),
     #Chests
     "Secret Chest 1 - Beach (Present) near the stairs": LocationData("Beach",id =  59),
     "Secret Chest 2 - Beach (Present) on the platform above the pillars": LocationData("Beach",id = 60),
@@ -160,7 +160,7 @@ location_table: dict[str,LocationData] = {
     "Time Portal - Prison (Present)": LocationData("Prison (Present)",id = 129), #Wind of Fate = Breath of Fate upgrade
     "Time Portal - Throne Room (Past)": LocationData("Throne Room (Past)",id = 130,rule = lambda state, player: state.has("Kaileena Defeated" and "Scorpion Sword",player)), #Additional Sand Tank
     "Time Portal - Sacred Caves (Present)": LocationData("Sacred Caves",id = 131), #Cyclone of Fate = Final Breath of Fate upgrade
-}    
+}
     
 event_table: dict[str, LocationData(Region, id)]
 
