@@ -79,9 +79,9 @@ location_table: dict[str,LocationData] = {
     #Secret Weapons
     "Teddy Bear":  LocationData("Mechanical Pit (Present)",id = 54),
     "Glove":  LocationData("Catacombs",id = 55),
-    "Pink Flamingo":  LocationData("Garden Hall (Past)",id = 56, rule lambda.state, player: state.has("Scorpion Sword",player)),
+    "Pink Flamingo":  LocationData("Garden Hall (Past)",id = 56, rule = lambda state, player: state.has("Scorpion Sword",player)),
     "Hockey Stick":  LocationData("Main Hall",id = 57),
-    "Light Sword":  LocationData("Mystic Caves",id = 58, rule lambda.state, player: state.has("Scorpion Sword", player)),
+    "Light Sword":  LocationData("Mystic Caves",id = 58, rule = lambda state, player: state.has("Scorpion Sword", player)),
     #Chests
     "Secret Chest 1 - Beach (Present) near the stairs": LocationData("Beach",id =  59),
     "Secret Chest 2 - Beach (Present) on the platform above the pillars": LocationData("Beach",id = 60),
