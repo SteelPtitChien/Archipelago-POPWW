@@ -4,6 +4,7 @@ This is the repository for the Prince of Persia Warrior Within Archipelago imple
 Please keep in mind that this is an early version of the code, I am currently learning how to create a .apworld file as I am creating this one. This means that code may not be functional, the structure may be subject to major changes because I don't have a global idea of what I need to put in the files.
 This serves as a way to show the progress and potentially get feedback. If you have any ideas, feel free to put them in the discord channel on the official Archipelago community server.
 The final goal is to create a mod that you will install in the game files so it will be automatic.
+It will be developed for the pc version first (Steam version will be used but other pc versions should be compatible), with the possibility of adapting the apworld and mod for the psp port.
 
 
 Here are the Rules I imagined:
